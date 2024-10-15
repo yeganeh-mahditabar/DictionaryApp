@@ -1,7 +1,8 @@
 const word = document.querySelector('.search-form input');
 const wordDetails = document.querySelector('.dictionary-content');
+const searchForm = document.querySelector('.search-form');
 
-document.querySelector('.search-form').addEventListener('submit', function (e) {
+searchForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
     const word = document.querySelector('.search-form input').value.trim();
