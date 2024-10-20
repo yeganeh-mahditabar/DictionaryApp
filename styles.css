@@ -30,6 +30,10 @@ p {
     max-width: 100%;
     overflow: hidden;
     padding: 0;
+
+}
+.definition-template{
+    display: none;
 }
 
 header {
@@ -50,6 +54,7 @@ nav {
 }*/
 
 .logo {
+    margin: 10px 0;
     text-align: center;
     display: flex;
     align-items: center;
@@ -57,7 +62,9 @@ nav {
 }
 
 .logo img {
-    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
 }
 
 .logo span {
@@ -91,7 +98,12 @@ nav {
     margin-bottom: 10px;
 }
 
+.error-message {
+    color: #E57373;
+}
+
 .suggested-words {
+    margin-left: 2%;
     font-size: 14px;
     text-align: left;
     width: 80%;
@@ -134,8 +146,8 @@ main {
 }
 
 .item-icon img {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
 }
 
 .item-content h2 {
@@ -147,9 +159,9 @@ main {
     color: #a3a3a3;
 }
 
-.dictionary-definition {
-    padding-left: 40px;
-}
+/*.dictionary-definition {
+    padding-left: 30px;
+}*/
 
 .dictionary-definition h3 {
     font-size: 18px;
@@ -167,8 +179,7 @@ footer {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    background-color: #121417;
+    padding: 20px; /* فاصله داخلی فوتر */
     position: relative;
 }
 
@@ -176,7 +187,7 @@ footer {
     display: flex; 
     flex-direction: row;
     justify-content: center; 
-    gap: 50px;
+    gap: 150px;
 }
 
 .footer-nav a {
@@ -201,6 +212,10 @@ footer {
     main {
         width: 90%;
     }
+
+    .footer-nav {
+        gap: 40%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -214,5 +229,9 @@ footer {
 
     .suggested-words {
         font-size: 10px;
+    }
+
+    .footer-nav {
+        gap: 10%;
     }
 }
