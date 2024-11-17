@@ -98,8 +98,15 @@ nav {
     margin-bottom: 10px;
 }
 
-.error-message {
+.errors {
+    display: none;
     color: #E57373;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.errors.show-error {
+    display: block;
 }
 
 .suggested-words {
@@ -159,16 +166,20 @@ main {
     color: #a3a3a3;
 }
 
-/*.dictionary-definition {
-    padding-left: 30px;
-}*/
+.item-icon img[hidden] {
+    display: none;
+}
 
-.dictionary-definition h3 {
+.item-content[hidden] {
+    display: none;
+}
+
+.dictionary-definition-container h3 {
     font-size: 18px;
     margin-bottom: 5px;
 }
 
-.dictionary-definition p {
+.dictionary-definition-container p {
     font-size: 16px;
     color: #a3a3a3;
 }
@@ -179,7 +190,7 @@ footer {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* فاصله داخلی فوتر */
+    padding: 20px;
     position: relative;
 }
 

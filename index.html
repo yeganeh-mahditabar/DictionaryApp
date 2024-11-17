@@ -22,7 +22,10 @@
                 <input type="text" placeholder="Search for a word...">
                 <div class="suggested-words">
                     <span class="suggested">suggested words: </span>
-                    <span class="words">forage, blossom, ambiguous...</span>
+                    <span class="words">
+                        <a href="?word=forage">forage</a>, 
+                        <a href="?word=blossom">blossom</a>, 
+                        <a href="?word=ambiguous">ambiguous</a>...</span>
                 </div>
                 
             </form>
@@ -30,19 +33,21 @@
     </header>
 
     <main>
-        <section class="dictionary-content">
+        <p class="errors"></p>
+        <section class="dictionary-content" hidden>
             <div class="dictionary-item">
                 <div class="item-icon">
-                
+                    <img src="./image/dictio.png" alt="Phonetic Icon" hidden>
                 </div>
-                <div class="item-content">
-                    <h2></h2>
-                    <p></p>
+                <div class="item-content" hidden>
+                    <h2>Phonetic</h2>
+                    <p class="phonetic"></p>
                 </div>
             </div>
 
 
-            <div class="dictionary-definition">
+            <div class="dictionary-definition-container"></div>
+            <div class="dictionary-definition-template" hidden>
                 <h3></h3>
                 <p></p>
             </div>
